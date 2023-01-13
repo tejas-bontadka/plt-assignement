@@ -1,4 +1,4 @@
-# plt-assignement
+# plt-assignment
 Steps to run the project:
 
 1. Clone the project to any desired location.

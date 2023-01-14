@@ -11,4 +11,4 @@ Steps to run the project:
 8. In another command prompt, checkout to the location where you have cloned the project, Execute `cd plt-assignment`.
 9. Execute `cd plt-ui`.
 10. Execute `npm i`.
-11. Execute `npm start`, Then open the browser, open `http://localhost:8001`
+11. Execute `npm start`, Then open the browser, open `http://localhost:3000`

@@ -12,11 +12,6 @@ const mockCAQ = jest.fn((sku: string): number => {
 	);
 	let mockStockQuantity: number =
 		mockStocks.find((ele: StockDTO) => ele.sku === sku)?.stock || 0;
-	if (!totalTranscationOfSKU.length && !mockStockQuantity) {
-		throw new Error(
-			"Provided SKU is not available in both Stocks and Transactions"
-		);
-	}
 	mockStockQuantity = totalTranscationOfSKU.reduce(
 		(acc: number, cur: TransactionDTO) => {
 			if (cur.type === "order") {

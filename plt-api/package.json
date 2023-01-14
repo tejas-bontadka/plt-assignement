@@ -9,7 +9,7 @@
 		"start": "nodemon dist/index.js",
 		"preserve": "npm run build",
 		"serve": "concurrently \"npx tsc -w\"  \"nodemon dist/index.js\"",
-		"test": "jest -w --coverage"
+		"test": "jest --coverage"
 	},
 	"keywords": [],
 	"author": "",

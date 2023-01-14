@@ -27,5 +27,8 @@ app.use("/api/v0", StockManagementController);
 app.get("/check", (req: Request, res: Response) => {
 	res.send("APIs are up and running");
 });
+if (require.main === module) {
+	app.listen(port, () => console.log(`Server started on port ${port}`));
+}
 
-app.listen(port, () => console.log(`Server started on port ${port}`));
+export = app;

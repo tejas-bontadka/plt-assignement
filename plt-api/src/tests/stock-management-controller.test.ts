@@ -2,6 +2,8 @@ import app from "../index";
 
 import request from "supertest";
 
+// Unit tests for /quantity end point, and test the scenarios when it interacts with services
+
 describe("GET stocks quantity by /quantity api", () => {
 	
 	it("Hit API without sending sku in query", async () => {
